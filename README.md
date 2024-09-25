@@ -1,7 +1,7 @@
 # My Portfolio
 
 ## Deployment
-[View my Portfolio Live]([https://your-deployment-link-here](https://my-portfolio-ruddy-sigma-52.vercel.app/))
+[View my Portfolio Live]((https://my-portfolio-ruddy-sigma-52.vercel.app/))
 
 ## Overview
 Welcome to my portfolio! This is a web application showcasing my skills, projects, and contact information. 
