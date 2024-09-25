@@ -1,9 +1,10 @@
 "use client";
-import { FaCss3, FaJava, FaJs, FaNodeJs, FaHtml5, FaSchool } from 'react-icons/fa';
-import { SiMysql, SiMongodb, SiHibernate } from "react-icons/si";
+import { FaCss3, FaJava, FaJs, FaNodeJs, FaHtml5, FaSchool, FaReact, FaGithub } from 'react-icons/fa';
+import { SiMysql, SiMongodb, SiHibernate, SiEclipseide, SiJupyter } from "react-icons/si";
 import { TbBrandCpp } from "react-icons/tb";
 import { BiLogoSpringBoot } from "react-icons/bi";
 import { GoLocation } from "react-icons/go";
+import { VscVscode } from "react-icons/vsc";
 //about data
 const about = {
   icon: "/assets/profile/me-8.svg",
@@ -145,6 +146,26 @@ const skills = {
     {
       icon: <SiMongodb />,
       name: "MongoDB",
+    },
+    {
+      icon: <FaReact />,
+      name: "React",
+    },
+    {
+      icon: <FaGithub />,
+      name: "GitHub Tool",
+    },
+    {
+      icon: <SiEclipseide />,
+      name: "Eclipse IDE",
+    },
+    {
+      icon: <VscVscode />,
+      name: "VS Code IDE",
+    },
+    {
+      icon: <SiJupyter />,
+      name: "Jupyter Notebook",
     },
   ],
 };
