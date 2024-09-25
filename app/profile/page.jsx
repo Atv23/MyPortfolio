@@ -280,11 +280,11 @@ const Profile = () => {
                   <p className="text-right"> - Shakuntala Devi</p>
                 </p>
 
-                <ScrollArea className="h-[400px]">
+                <ScrollArea className="h-[400px] ">
                   <ul className="grid grid-cols-1 lg:grid-cols-1 gap-[30px]">
                     {education.items.map((item, index) => {
                       return (
-                        <li key={index} className="w-full bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                        <li key={index} className="w-full bg-[#232329]  py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                           <span className="text-accent">{item.duration}</span>
                           <h3 className="text-xl max-w-full text-center lg:text-left">
                             {item.areaOfStudy}</h3>

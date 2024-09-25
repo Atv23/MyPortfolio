@@ -20,16 +20,17 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute">
+          className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px] absolute mix-blend-lighten"
+          >
           <Image
             src="/assets/photo.png"
             priority
             quality={100}
             fill
             alt=""
-            className="object-contain"
+            className="object-contain opacity-55"  
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-55 pointer-events-none" />
+          {/* <div className=" absolute up-0 bottom-0 left-1 right-1 h-1/2  bg-gradient-to-b from-transparent to-black opacity-25 pointer-events-none" /> */}
         </motion.div>
         {/* circle */}
         <motion.svg
