@@ -1,10 +1,12 @@
 "use client";
-import { FaCss3, FaJava, FaJs, FaNodeJs, FaHtml5, FaSchool, FaReact, FaGithub } from 'react-icons/fa';
-import { SiMysql, SiMongodb, SiHibernate, SiEclipseide, SiJupyter } from "react-icons/si";
+import { FaCss3, FaJava, FaJs, FaNodeJs, FaHtml5, FaSchool, FaReact, FaGithub, FaBootstrap, FaNode, FaAws, FaAngular } from 'react-icons/fa';
+import { SiMysql, SiMongodb, SiHibernate, SiEclipseide, SiJupyter, SiSpringboot, SiPostman } from "react-icons/si";
 import { TbBrandCpp } from "react-icons/tb";
 import { BiLogoSpringBoot } from "react-icons/bi";
 import { GoLocation } from "react-icons/go";
 import { VscVscode } from "react-icons/vsc";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { CgOrganisation } from "react-icons/cg";
 //about data
 const about = {
   icon: "/assets/profile/me-8.svg",
@@ -62,12 +64,23 @@ const experience = {
   items: [
     {
       company: "Toshiba Software (India) Pvt. Ltd.",
-      position: "Technical Intern",
+      position: "Trainee Engineer",
       duration: "April 2024 - July 2024",
-      location: "Bangalore",
+      location: "Bengaluru, Karnataka",
       workdone: [
-        "Worked on the product development team for Toshiba’s Bar-code printers, handling activities in the Service Layer.",
-        "Conducted code reviews, verified and resolved bugs, implemented new functions in the codebase as per requirements, performed weekly sanity tests on package releases, and learned TPCL to manage print commands for Toshiba printers.",
+        "Collaborated with the product development team on Toshiba’s barcode printers,contributing in the Service Layer work.",
+        "Conducted thorough code reviews and resolved an average of 8-10 bugs per week, implementing new features aligned with project requirements.",
+        " Performed weekly sanity tests on package releases, ensuring quality and reliability"
+      ],
+    },
+    {
+      company: "CodeClause",
+      position: "Java Development Intern",
+      duration: "Oct 2024 - Nov 2024",
+      location: "Remote",
+      workdone: [
+        "During my internship at Code Clause, I developed a range of Java projects, utilizing Core Java, the Spring Framework, and Spring Boot to build and refine backend functionalities.",
+        "This experience allowed me to strengthen my skills in backend development, and my contributions were recognized with a letter of recommendation.",
       ],
     },
   ],
@@ -105,15 +118,27 @@ const education = {
 const skills = {
   icon: "/assets/profile/skills.svg",
   title: "My Skills",
-  description: "Proficient in a diverse range of technologies, I am currently more aligned with Java backend development. I continuously seek to enhance my skills and stay updated with the latest tech trends. Below are the key skills I have developed, reflecting my commitment to personal and professional growth.",
+  description: "I am currently aligned in full-stack Java development,focusing on backend technologies like Spring Boot, REST APIs, and Microservices. I'm committed to skill enhancement and staying updated with tech trends. Below are the key skills I've developed, reflecting my personal and professional growth.",
   skillList: [
-    {
-      icon: <TbBrandCpp />,
-      name: "C++ Programming",
-    },
     {
       icon: <FaJava />,
       name: "Java Programming",
+    },
+    {
+      icon: <SiSpringboot />,
+      name: "Spring Boot",
+    },
+    // {
+    //   icon: <FaAws />,
+    //   name: "AWS",
+    // },
+    {
+      icon: <BiLogoSpringBoot />,
+      name: "Spring Framework",
+    },
+    {
+      icon: <TbBrandCpp />,
+      name: "C++ Programming",
     },
     {
       icon: <SiMysql />,
@@ -124,23 +149,27 @@ const skills = {
       name: "Hibernate Framework",
     },
     {
-      icon: <BiLogoSpringBoot />,
-      name: "Spring Framework",
-    },
-    {
       icon: <FaHtml5 />,
-      name: "HTML 5",
+      name: "HTML5",
     },
     {
       icon: <FaCss3 />,
-      name: "CSS 3",
+      name: "CSS3",
     },
     {
       icon: <FaJs />,
       name: "JavaScript",
     },
     {
-      icon: <FaNodeJs />,
+      icon: <FaBootstrap />,
+      name: "Bootstrap",
+    },
+    {
+      icon: <RiTailwindCssFill />,
+      name: "Tailwind",
+    },
+    {
+      icon: <FaNode />,
       name: "Node.js",
     },
     {
@@ -152,8 +181,16 @@ const skills = {
       name: "React",
     },
     {
+      icon: <FaAngular />,
+      name: "Angular",
+    },
+    {
       icon: <FaGithub />,
       name: "GitHub Tool",
+    },
+    {
+      icon: <SiPostman />,
+      name: "Postman Tool",
     },
     {
       icon: <SiEclipseide />,
@@ -254,7 +291,7 @@ const Profile = () => {
                   {experience.description}
                 </p>
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-1 gap-[30px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-1 gap-[10px]">
                     {experience.items.map((item, index) => {
                       return (
                         <li key={index} className="w-full bg-[#232329] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start">
@@ -262,8 +299,8 @@ const Profile = () => {
                           <h3 className="text-xl max-w-full text-center lg:text-left">
                             {item.position}</h3>
                           <div className="flex items-center gap-3">
-                            {/* dot */}
-                            <span className="w-[8px] h-[8px] mt-2 rounded-full bg-accent"></span>
+                            {/* Organisation Icon */}
+                            <CgOrganisation className="text-accent w-5 h-5" />
                             <h3 className="text-xl max-w-full mt-2 text-center lg:text-left">
                               {item.company}
                             </h3>

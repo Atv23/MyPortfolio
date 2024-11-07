@@ -21,6 +21,56 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
+    category: "Microservices-Based College Review App",
+    title: "Project 1",
+    description: "Separate services (User,College & Rating service) each connected to different databases(MySQLPostgreSQL and MongoDB) offering client interaction through an API gateway which has resilience and authentication features.",
+    stack: [{ name: "Spring Boot" }, { name: "REST APIs" }, { name: "OAuth2" }, { name: "React" }],
+    image: "/assets/project/projectnew1.png",
+    live: "no",
+    github: "https://github.com/Atv23/CollegeReviewApp",
+  },
+  {
+    num: "01",
+    category: "Smart Contact Manager",
+    title: "Project 1",
+    description: "Full-stack contact management app with role-based access control, image upload support, and CRUD features. Secured with Spring Security and MySQL, rendered with Thymeleaf.",
+    stack: [{ name: "Spring Boot" }, { name: "MVC" }, { name: "Thymeleaf" }, { name: "MySQL" }],
+    image: "/assets/project/projectnew2.png",
+    live: "no",
+    github: "https://github.com/Atv23/SmartContactManager",
+  },
+  {
+    num: "01",
+    category: "JWT Secure Auth System",
+    title: "Project 1",
+    description: "Built a secure Angular-Spring Boot web application with JWT authentication, MySQL, and Spring Security, supporting sign-up, login, image uploads, and protected user dashboard via REST APIs.",
+    stack: [{ name: "Spring Boot" }, { name: "JWT" }, { name: "REST APIs" },{ name: "MySQL" }, { name: "Angular" }],
+    image: "/assets/project/projectnew3.png",
+    live: "no",
+    github: "https://github.com/Atv23/JWT-Secure-Auth-System",
+  },
+  {
+    num: "01",
+    category: "Email Sender App",
+    title: "Project 1",
+    description: "Developed an email sender system with Angular frontend and Spring Boot backend, featuring email composition, sending, and progress tracking. Integrated JavaMail API for backend email operations.",
+    stack: [{ name: "Spring Boot" }, { name: "JavaMail API" }, { name: "REST APIs" }, { name: "Angular" }],
+    image: "/assets/project/projectnew4.png",
+    live: "no",
+    github: "https://github.com/Atv23/EmailSenderApp",
+  },
+  {
+    num: "01",
+    category: "Online Banking Management",
+    title: "Project 1",
+    description: "An Online Banking app enabling user registration, account creation, fund transfers, and transaction history with secure error handling and user feedback.",
+    stack: [{ name: "Spring Boot" }, { name: "MVC" }, { name: "MySQL" }, { name: "Thymeleaf" }],
+    image: "/assets/project/projectnew5.png",
+    live: "no",
+    github: "https://github.com/Atv23/Project2-CodeClauseJavaInternship",
+  },
+  {
+    num: "01",
     category: "Crowdfunding App - Blockchain Project",
     title: "Project 1",
     description: "A Crowdfunding App featuring campaign creation and donation functionalities. It ensures transparency and immutability in transactions, with Smart Contracts automating reliable fund disbursement to campaigns.",
@@ -199,6 +249,16 @@ const projects = [
     live: "no",
     github: "no",
   },
+  {
+    num: "19",
+    category: "Product Registry - Java Project",
+    title: "Project 19",
+    description: "Built a product management system using Spring Core and MVC, supporting CRUD operations with Hibernate for database interactions and MySQL for data storage.",
+    stack: [{ name: "Spring MVC" }, { name: "Hibernate" }, { name: "MySQL" },{ name: "Maven" }],
+    image: "/assets/project/project19.png",
+    live: "no",
+    github: "https://github.com/Atv23/Product-Registry",
+  },
 ];
 
 const Project = () => {
@@ -223,7 +283,8 @@ const Project = () => {
             <div className="flex flex-col gap-[30px] h-[50%]">
               {/* Outline num */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
-                {project.num}
+                {/* {project.num} */}
+                {projects.indexOf(project) + 1}
               </div>
               {/* project category */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">

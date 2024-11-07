@@ -14,7 +14,7 @@ const certifications = [
   {
     num: "02",
     title: "Internship",
-    description: "Internship certificate from Toshiba India, highlighting my contributions to product development and my hands-on experience in coding and quality assurance.",
+    description: "Internship certificate from Toshiba Software India, highlighting my contributions to product development and my hands-on experience in coding and quality assurance.",
     href: "https://drive.google.com/drive/folders/1HfCgGFEyqLbLrk2sygbixeh1tSP7kYDv?usp=sharing",
   },
   {
@@ -26,7 +26,7 @@ const certifications = [
   {
     num: "04",
     title: "Participations",
-    description: "Certificates of participation from various tech events and hackathons, showcasing my commitment to continuous learning and collaborative problem-solving.",
+    description: "Certificates of participation from tech events, open-source contributions and hackathons, showcasing my commitment to continuous learning and problem-solving.",
     href: "https://drive.google.com/drive/folders/1KNkpE5dGIck_DG-1zrXI_13kQ2uWBh_V?usp=sharing",
   },
 ];
